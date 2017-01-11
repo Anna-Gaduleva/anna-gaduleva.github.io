@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/signIn.css">
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <title>SignIn</title>
+
+</head>
+<body>
+<nav>
+    <div id="drop-container">
+        <div class="dropdown">
+            <div id="menu-drop">
+                <div class="menu-icon"></div>
+                <div class="menu-icon"></div>
+                <div class="menu-icon"></div>
+            </div>
+            <div class="drop-cont">
+                <a href="index.html">Home</a>
+                <a href="notes.html">My Notes</a>
+                <a href="books.html">My Books</a>
+                <a href="subs.html">Subscriptions</a>
+                <a href="community.html">Community</a>
+                <a href="signIn.html">Sign In</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <img id="search-icon" src="search.png" alt="Search Icon">
+            <div id="search-drop-cont">
+                <div><form><input type="text" placeholder="     Search..."></form></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <ul>
+        <li id="logo"><a href="index.html">ReNote</a></li>
+        <li class="nav-sub"><a href="index.html">Home</a></li>
+        <li class="nav-sub"><a href="notes.html">My Notes</a></li>
+        <li class="nav-sub"><a href="books.html">My Books</a></li>
+        <li class="nav-sub"><a href="subs.html">Subscriptions</a></li>
+        <li class="nav-sub"><a href="community.html">Community</a></li>
+        <li class="nav-sub"><a href="signIn.html">Sign In</a></li>
+    </ul>
+    <form><input id="search-field" type="text" placeholder="     Search..."></form>
+    <div class="clear"></div>
+</nav>
+
+
+    <img src="img/3.jpg" id="cover" alt="">
+    <div id="container">
+        <div id="signin-wrapper">
+            <div id="signin-social">
+                <h4>Sign in with Google+ or Facebook account</h4>
+                <a href="#"><img class="social" src="img/f-log.png" alt="Login with Facebook"></a>
+                <a href="#"><img class="social" src="img/g-log.png" alt="Login with Google+"></a>
+            </div>
+            <hr>
+            <div id="signin-custom">
+                <h4>Sign in with ReNote Account</h4>
+                <form>
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="user-name" required>
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="pass" required>
+                    <button type="submit">Login</button>
+                    <input type="checkbox" checked="checked"> Remember me
+                    <br>
+                    <a href="#">Forgot password or don't have an account?</a>
+                </form>
+            </div>
+            <div id="clear"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        function menuUp() {
+            var dropCont = document.getElementById('drop-cont');
+            if(dropCont.style.display == "block") { // if is menuBox displayed, hide it
+                dropCont.style.display = "none";
+            }
+            else { // if is menuBox hidden, display it
+                dropCont.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

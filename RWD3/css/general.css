@@ -1,0 +1,377 @@
+/* Author: Anna Graduleva
+   General fonts, positioning that applies to most pages*/
+main, aside, .container{
+    color: #888;
+    text-align: justify;
+}
+h3{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
+    font-size: 1.1em;
+    font-weight: 400;
+    font-variant: small-caps;
+    margin-left: 3em;
+    margin-top: 1.5em;
+}
+h4{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+p{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
+    font-size: 0.85em;
+}
+.name{
+    font-style: italic;
+}
+.container{
+    width: 100%;
+    margin-top: 0.6em;
+}
+.wrapper{
+    width: 71%;
+    margin-left: 15%;
+    padding: 0;
+    background-color: #EBE8E4;
+}
+aside{
+    float: left;
+    margin-right: 0.6em;
+    width: 35.3680297%;
+    border: 1px solid #dedede;
+    border-radius: 0.4em;
+    background-color: #fff;
+}
+main{
+    float: left;
+    width: 63.197026%;
+    margin-bottom: 0.6em;
+    border: 1px solid #dedede;
+    border-radius: 0.4em;
+    background-color: #fff;
+}
+
+
+/*Aside*/
+.aside-section{
+    margin-bottom: 1.5em;
+}
+.aside-book-cover{
+    float: left;
+    width: 29%;
+    height: 74%;
+}
+.aside-book-cover img{
+    width: 100%;
+    height: auto;
+}
+.aside-content{
+    float: left;
+    width: 50%;
+    padding: 0 1em;
+}
+.aside-br{
+    clear:both;
+}
+
+
+/*Footer*/
+footer{
+    clear: both;
+    width: 100%;
+    border: 1px solid #dedede;
+    border-radius: 0.4em;
+    background-color: #fff;
+}
+#toTop-icon{
+    float: left;
+    height: 3em;
+    width: 3em;
+    margin-top: 2.2em;
+    margin-left: 2em;
+    opacity: 0.7;
+}
+footer > div{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+footer > div > ul{
+    list-style: none;
+    float: left;
+}
+footer > div > ul > li{
+    color: #aaa;
+    display: block;
+    font-size: 0.9em;
+    padding: 0 1.5em;
+}
+.ul-headers{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    color: #6a6a6a;
+}
+footer a{
+    text-decoration: none;
+    color: #888;
+}
+footer a:hover{
+    color: #6a6a6a;
+    letter-spacing: 0.03em;
+}
+#social{
+    float: right;
+    margin-top: 2.7em;
+    margin-right: 2em;
+}
+.social{
+    margin-left: 0.7em;
+    opacity: 0.7;
+}
+footer hr{
+    clear: both;
+    opacity: 0;
+}
+
+
+
+
+/*MAIN PAGE UNIQUE*/
+/*All in <main> (right-hand side)*/
+
+.section-main{
+    width: 100%;
+}
+.content-wrap:hover{
+    background-color: #f6f3ef;
+}
+.content-wrap{
+    float: left;
+    width: 64%;
+    padding: 1em;
+    border: 1px solid #dedede;
+    border-radius: 0.4em;
+}
+.book-cover{
+    float: left;
+    margin: 0.5em 3em;
+    width: 17%;
+    height: 35%;
+    padding: 0;
+}
+.book-cover img{
+    width: 100%;
+    height: auto;
+}
+.invisible{
+    clear: both;
+    display: none;
+}
+.outer{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    clear: both;
+    opacity: 0;
+    margin-bottom: 1em;
+}
+.clickable{
+    color: #888;
+    text-decoration: none;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
+}
+
+
+
+
+/*COMMUNITY PAGE UNIQUE*/
+
+#community, article{
+    border: 1px solid #dedede;
+    border-radius: 0.4em;
+    background-color: #fff;
+}
+#community, aside{
+    margin-bottom: 0.6em;
+}
+
+#community {
+    float: left;
+    width: 63.197026%;
+    padding: 0 2em;
+}
+article{
+    width: 100%;
+    margin-bottom: 0.6em;
+}
+.comm-content-wrap{
+    float: left;
+    width: 63%;
+    height: auto;
+    padding: 0 2.7em;
+}
+.comm{
+    float: left;
+    width: 11em;
+    height: 11em;
+    overflow: hidden;
+}
+.comm img{
+    width: auto;
+    height: 100%;
+}
+.clear{
+    clear:both;
+}
+
+
+
+
+/*Responsive*/
+@media screen and (max-width: 1870px){
+
+    .wrapper{
+        width: 90%;
+        margin-left: 6%;
+    }
+
+}
+
+@media screen and (max-width: 1483px){
+   .wrapper{
+        width: 95%;
+       margin-left: 5%;
+   }
+    aside{
+        width: 40%;
+        margin-right: 1%;
+    }
+    #community, main{
+        width: 50%;
+    }
+    .comm{
+        max-width: 29%;
+        max-height: 41%;
+    }
+    .comm-content-wrap{
+        width: 55%;
+        padding: 0 2%;
+    }
+    main{
+        width: 55%;
+    }
+    .content-wrap{
+        margin-right: 1em;
+        width:65%;
+
+    }
+    .book-cover img{
+        margin-left: 0;
+        margin-right: 2em;
+    }
+
+
+
+}
+@media screen and (max-width: 1230px){
+    .wrapper{
+        width:100%;
+        margin: 0;
+    }
+    #community, main{
+        width: 59%;
+    }
+}
+@media screen and (max-width: 1094px){
+    .book-cover{
+        display: none;
+    }
+    .content-wrap{
+        width: 95%;
+        margin: 0 2.5%;
+    }
+}
+
+
+@media screen and (max-width: 996px){
+    #community{
+        padding: 0 2%;
+    }
+    .comm-content-wrap{
+        width: 100%;
+        padding: 2% 4%;
+    }
+    .comm{
+        display: none;
+    }
+    .aside-content p{
+        display: none;
+    }
+    .aside-book-cover{
+        width: 80%;
+    }
+    .aside-book-cover img{
+        margin-left: -8%;
+    }
+    .aside-content{
+        padding: 0 2%;
+        width: 100%;
+    }
+
+    aside h4, progress {
+        margin-left: 8%;
+    }
+    h3{
+        margin-left: 2%;
+    }
+}
+@media screen and (max-width: 545px){
+    aside, #community{
+        width: 100%;
+    }
+    .aside-book-cover{
+        width: 40%;
+    }
+    .aside-content{
+        width: 40%;
+        margin-left: -2%;
+    }
+    .aside-content p{
+        display: inline;
+    }
+    progress{
+        margin-left: 0;
+        margin-top: 4%;
+    }
+    h3{
+        text-align: center;
+    }
+    main{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 439px){
+    .aside-book-cover{
+        width: 85%;
+    }
+    .aside-content{
+        width: 100%;
+        padding: 0 6%;
+    }
+    aside h4{
+        margin-left: 0;
+    }
+    .book-cover{
+        display: block;
+        width: 70%;
+    }
+    .content-wrap{
+        border: none;
+    }
+   .outer{
+       opacity: 1;
+   }
+
+}
