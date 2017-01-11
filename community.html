@@ -9,7 +9,8 @@
     <title>Community</title>
 </head>
 <body>
-    <nav>
+<nav>
+    <div id="drop-container">
         <div class="dropdown">
             <div id="menu-drop">
                 <div class="menu-icon"></div>
@@ -23,20 +24,30 @@
                 <a href="subs.html">Subscriptions</a>
                 <a href="community.html">Community</a>
                 <a href="signIn.html">Sign In</a>
-
             </div>
         </div>
-        <ul>
-            <li id="logo"><a href="index.html">ReNote</a></li>
-            <li class="nav-sub"><a href="index.html">Home</a></li>
-            <li class="nav-sub"><a href="notes.html">My Notes</a></li>
-            <li class="nav-sub"><a href="books.html">My Books</a></li>
-            <li class="nav-sub"><a href="subs.html">Subscriptions</a></li>
-            <li class="nav-sub"><a href="community.html">Community</a></li>
-            <li class="nav-sub"><a href="signIn.html">Sign In</a></li>
-            <li class="search-form"><form><input type="text" placeholder="     Search..."></form></li>
-        </ul>
-    </nav>
+
+        <div class="dropdown">
+            <img id="search-icon" src="search.png" alt="Search Icon">
+            <div id="search-drop-cont">
+                <div><form><input type="text" placeholder="     Search..."></form></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <ul>
+        <li id="logo"><a href="index.html">ReNote</a></li>
+        <li class="nav-sub"><a href="index.html">Home</a></li>
+        <li class="nav-sub"><a href="notes.html">My Notes</a></li>
+        <li class="nav-sub"><a href="books.html">My Books</a></li>
+        <li class="nav-sub"><a href="subs.html">Subscriptions</a></li>
+        <li class="nav-sub"><a href="community.html">Community</a></li>
+        <li class="nav-sub"><a href="signIn.html">Sign In</a></li>
+    </ul>
+    <form><input id="search-field" type="text" placeholder="     Search..."></form>
+    <div class="clear"></div>
+</nav>
 
 
     <div class="container">

@@ -52,7 +52,7 @@
 }
 
 /*SignIn Custom*/
-input[type=text],input[type=password]{
+div > form > input[type=text],input[type=password]{
     width: 100%;
     padding: 3.5% 5.5%;
     margin: 2% 0;

@@ -140,6 +140,7 @@ footer hr{
 
 /*MAIN PAGE UNIQUE*/
 /*All in <main> (right-hand side)*/
+
 .section-main{
     width: 100%;
 }
@@ -148,7 +149,7 @@ footer hr{
 }
 .content-wrap{
     float: left;
-    width: 34em;
+    width: 64%;
     padding: 1em;
     border: 1px solid #dedede;
     border-radius: 0.4em;
@@ -156,12 +157,13 @@ footer hr{
 .book-cover{
     float: left;
     margin: 0.5em 3em;
-    width: 7.6em;
-    height: 14em;
+    width: 17%;
+    height: 35%;
+    padding: 0;
 }
 .book-cover img{
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
 .invisible{
     clear: both;
@@ -173,6 +175,7 @@ footer hr{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     clear: both;
     opacity: 0;
+    margin-bottom: 1em;
 }
 .clickable{
     color: #888;
@@ -233,6 +236,7 @@ article{
         width: 90%;
         margin-left: 6%;
     }
+
 }
 
 @media screen and (max-width: 1483px){
@@ -255,16 +259,42 @@ article{
         width: 55%;
         padding: 0 2%;
     }
+    main{
+        width: 55%;
+    }
+    .content-wrap{
+        margin-right: 1em;
+        width:65%;
+
+    }
+    .book-cover img{
+        margin-left: 0;
+        margin-right: 2em;
+    }
+
+
+
 }
 @media screen and (max-width: 1230px){
     .wrapper{
         width:100%;
         margin: 0;
     }
-    #community{
+    #community, main{
         width: 59%;
     }
 }
+@media screen and (max-width: 1094px){
+    .book-cover{
+        display: none;
+    }
+    .content-wrap{
+        width: 95%;
+        margin: 0 2.5%;
+    }
+}
+
+
 @media screen and (max-width: 996px){
     #community{
         padding: 0 2%;
@@ -318,6 +348,9 @@ article{
     h3{
         text-align: center;
     }
+    main{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 439px){
     .aside-book-cover{
@@ -330,5 +363,15 @@ article{
     aside h4{
         margin-left: 0;
     }
+    .book-cover{
+        display: block;
+        width: 70%;
+    }
+    .content-wrap{
+        border: none;
+    }
+   .outer{
+       opacity: 1;
+   }
 
 }

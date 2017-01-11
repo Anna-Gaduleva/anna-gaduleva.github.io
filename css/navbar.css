@@ -20,12 +20,13 @@ nav {
 
 }
 nav ul {
-    margin: 0;
+    margin:0;
     padding: 0;
+    float: left;
     list-style: none
 }
 
-#menu-drop, .nav-sub, #logo, .search-form {
+#menu-drop, .nav-sub, #logo, .search-form, #search-icon {
     display: inline-block;
 }
 
@@ -37,10 +38,19 @@ nav a{
     padding: 0 1.5em;
     text-decoration: none;
 }
-
+#drop-container{
+    float: left;
+    margin: 0;
+    padding: 0.7em 1em;
+}
+.dropdown {
+    max-width: 75px;
+    margin-left: 1em;
+    float: left;
+    position: relative;
+    display: inline-block;
+}
 #menu-drop{
-    position: absolute;
-    margin: 0.7em 2em;
     display: none;
     width: 35px;
     height: 56px;
@@ -51,14 +61,16 @@ nav a{
     background-color: black;
     margin: 0.3em 0;
 }
-.drop-cont {
+.drop-cont, #search-drop-cont {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 10em;
     z-index: 999;
 }
-
+#search-drop-cont{
+    padding: 1em;
+}
 .drop-cont a {
     text-align: center;
     color: black;
@@ -66,9 +78,18 @@ nav a{
     text-decoration: none;
     display: block;
 }
+#search-icon{
+    max-width:35px;
+    max-height: 35px;
+    display: none;
+}
 .dropdown:hover .drop-cont {
     display: block;
-    margin: 2.7em 2em;
+    margin: 0;
+}
+.dropdown:hover #search-drop-cont{
+    display: inline;
+
 }
 .nav-sub:hover, .drop-cont a:hover{
     background-color: #282C2F;
@@ -77,19 +98,19 @@ nav a{
     color: #ffffff;
 }
  #logo > a{
-     padding: 0 2.5em;
      letter-spacing: 0.2em;
      font-size: 0.9em;
      font-weight: bold;
      color: black;
+     margin-right: 2.5em;
+     padding: 0;
  }
- .search-form{
+ #search-field{
      float: right;
      list-style-type: none;
-     width:14em;
-     line-height: 3.9em;
+     width:12em;
      font-size: 0.9em;
-     padding: 0 1.5em;
+     margin: 1.2em;
 
  }
 input[type=text]{
@@ -105,7 +126,7 @@ input[type=text]:focus{
 }
 
  /*Responsive*/
-@media screen and (max-width: 1026px) {
+@media screen and (max-width: 1060px) {
     .nav-sub{
         display: none;
     }
@@ -116,14 +137,32 @@ input[type=text]:focus{
         margin-left: 4em;
     }
 }
-@media screen and (max-width: 443px){
+@media screen and (max-width: 511px){
     #logo > a{
-        padding: 0;
-        margin-left: 30%;
+        margin-right: 0;
     }
 }
-@media screen and (max-width: 370px){
-    .search-form{
+@media screen and (max-width: 485px){
+    #logo > a{
+        padding: 0;
+        margin-left: -30%;
+    }
+    #search-field{
+        width: 8em;
+    }
+
+}
+@media screen and (max-width: 413px){
+    #search-field{
         display: none;
+    }
+
+    #search-icon{
+        display: inline;
+    }
+}
+@media screen and (max-width: 301px){
+    .dropdown{
+        margin: 0;
     }
 }
