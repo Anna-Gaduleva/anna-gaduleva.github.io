@@ -355,6 +355,7 @@ article{
 @media screen and (max-width: 439px){
     .aside-book-cover{
         width: 85%;
+        margin-left: 14%;
     }
     .aside-content{
         width: 100%;
@@ -373,5 +374,14 @@ article{
    .outer{
        opacity: 1;
    }
-
+}
+@media screen and (max-width: 329px){
+    .social{
+        margin-left: 0.2em;
+    }
+}
+@media screen and (max-width: 286px){
+    .social{
+        margin-left: 0;
+    }
 }
